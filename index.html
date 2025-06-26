@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend of the Lost Crown</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .satisfy-regular {
+            font-family: "Satisfy", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 300%;
+        }
+
+        #story-text {
+            font-family: "Moon Dance", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 180%;
+            color: rgb(250, 250, 110);
+        }
+
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 32px;
+            color: #676e04;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <a href="#" id="home-icon" class="home-icon"><i class="fas fa-home"></i></a>
+        <h1 class="satisfy-regular">The Legend of the Lost Crown</h1>
+        <p id="story-text">Click 'Start Game' to begin your adventure!</p>
+        <div id="choices"></div>
+        <button id="start-button">Start Game</button>
+        <button id="restart-button" style="display: none;">Restart Game</button>
+        <button id="exit-button" style="display: none;">Exit Game</button>
+        <p id="score">Score: 0</p>
+        <p id="highScore">High Score: 0</p>
+    </div>
+    <script src="storyData.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('home-icon').addEventListener('click', function () {
+            window.location.reload();
+        });
+
+        document.getElementById('exit-button').addEventListener('click', function () {
+            window.location.reload();
+        });
+    </script>
+</body>
+
+</html>
